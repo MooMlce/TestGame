@@ -8093,6 +8093,7 @@ function _glTexImage2D(target, level, internalFormat, width, height, border, for
     var pixelData = null;
     if (pixels) pixelData = emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat);
     GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixelData) // Кирилл Это место где картинки добавляются в канвас под webGl
+    console.log("fdsfds")
 }
 
 function _glTexParameteri(x0, x1, x2) {
